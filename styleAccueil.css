@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+    background: linear-gradient(to bottom, #FBEF6F, rgba(255, 215, 234, 0.8));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    border-radius: 10px;
+}
+
+.logo img {
+    width: 100px; /* Taille du logo adaptable */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link a {
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link a:hover { /*navbar*/
+    color: #12A74E;
+}
+
+.container-img{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.background h2 {
+    font-size: 1.8rem;
+    text-shadow: #333 5px 5px 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+/*img background header*/
+.background .container-img img {
+    width: auto;
+    height: 100%;
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
+} */
+
+/* FOOTER AVEC DÉGRADÉ ROSE */
+footer {
+    background: linear-gradient(to top, #FFD7EA, rgba(255, 215, 234, 0.8)); /* Dégradé rose */
+    padding: 30px 5%;
+    text-align: center;
+    color: #333;
+}
+
+/* Conteneur principal */
+footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Texte du footer */
+footer p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    flex: 1; /* Répartit l'espace entre les éléments */
+    min-width: 200px; /* Largeur minimale pour éviter les débordements */
+}
+
+/* Icônes des réseaux sociaux */
+.Footer-logo {
+    margin-top: 15px;
+}
+
+.Footer-logo img {
+    width: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Footer-logo img:hover {
+    transform: scale(1.1);
+}
+
+/* RESPONSIVE DESIGN */
+
+/* TABLETTE */
+@media (max-width: 768px) {
+    footer .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+
+    .Footer-logo img {
+        width: 35px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    footer {
+        padding: 20px 5%;
+    }
+
+    footer p {
+        font-size: 0.85rem;
+    }
+
+    .Footer-logo img {
+        width: 30px;
+    }
+}

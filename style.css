@@ -8,24 +8,23 @@
 }
 
 body {
+
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background: linear-gradient(to bottom, #FFFFE3, #FFD7EA);
 }
 
 /* HEADER */
 header {
-    background: linear-gradient(to bottom, #FFFFE3, rgba(255, 255, 255, 0.8));
-    padding: 20px 0;
+    height: 100vh;
 }
 
 /* NAVBAR */
 .navbar {
+    background: linear-gradient(to bottom, #FBEF6F, rgba(255, 215, 234, 0.8));
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 5%;
-    background: rgba(255, 255, 255, 0.6);
     border-radius: 10px;
 }
 
@@ -46,64 +45,268 @@ header {
     transition: color 0.3s ease-in-out;
 }
 
-.nav-link a:hover {
-    color: #ff7b9c;
+.nav-link a:hover { /*navbar*/
+    color: #12A74E;
 }
 
 /* IMAGE D'ACCUEIL */
 .background {
     text-align: center;
-    padding: 40px 5%;
+    height: 90vh;
+}
+
+.Contact {
+    text-align: center;
+    height: 100vh; /* Remplit toute la hauteur de l'écran */
+    width: 100%; /* Remplit toute la largeur */
+    background-image: url('../assets/Font-contact.webp'); /* Ajoute l'image */
+    background-size: cover; /* Ajuste l'image pour couvrir tout l'élément */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition */
+    display: flex; /* Pour centrer du texte ou des éléments à l'intérieur */
+    align-items: center; /* Centre verticalement */
+    justify-content: center; /* Centre horizontalement */
+}
+
+.container-img{
+    background-color: #ede56c98;
+    width: auto;
+    height: 90.25%;
+    border-radius: 250px 250px 0 0;
 }
 
 .background h2 {
     font-size: 1.8rem;
+    text-shadow: #333 5px 5px 5px;
     color: #333;
     font-weight: bold;
 }
 
-.background img {
-    width: 100%;
-    max-width: 800px;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+/*img background header*/
+.background .container-img img {
+    width: auto;
+    height: 90%;
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
 }
 
 /* SECTION A PROPOS */
-.A.propos {
-    padding: 40px 5%;
+.A-propos {
     text-align: center;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    margin: 30px auto;
-    width: 90%;
-    max-width: 1200px;
+    background: linear-gradient(to bottom, #ede56c98, rgba(255, 215, 234, 0.8));
+    width: 100%;
+    margin: 0 0;
+    padding-top: 150px;
+    
 }
 
-.A.propos h2 {
+.A-propos h2 {
     font-size: 2rem;
+    font-family: Adamina;
+    text-shadow: #333 5px 5px 5px;
     color: #333;
     margin-bottom: 15px;
 }
 
-.A.propos p {
-    font-size: 1rem;
+.A-propos p {
+
+    font-size: 1.5rem;
+    font-family: Adamina;
     color: #555;
     max-width: 800px;
     margin: 0 auto;
 }
 
-.A.propos img {
+/* .icon {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px; 
+    margin-bottom: 20px;*/
+}
+
+.A-propos img {
+    /* display: flex; */
+    justify-content:right;
+    gap: 20px;
+    width: 50%;
     width: 48%;
     max-width: 400px;
     margin: 15px;
     border-radius: 10px;
 }
+/* SECTION CONTACT AVEC IMAGE EN BACKGROUND */
+.contact-section {
+    width: 100%;
+    min-height: 100vh; /* Couvre tout l'écran */
+    background-image: url('./assets/Font-contact.webp'); /* Image en arrière-plan */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+/* Overlay pour améliorer la lisibilité */
+.contact-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* SECTION FORMULAIRE */
+.contact-form {
+    
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-family:  Inria Serif;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-form p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.input-group textarea {
+    resize: vertical;
+}
+
+/* BOUTON SOUMETTRE */
+.btn-submit {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #eeaeca, #94bbe9);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-submit:hover {
+    background: linear-gradient(135deg, #8d42f5, #6d83f2);
+    transform: scale(1.05);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .contact-form {
+        width: 95%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form h2 {
+        font-size: 1.8rem;
+    }
+
+    .btn-submit {
+        font-size: 1rem;
+    }
+}
+
+/* SECTION MAP */
+.map-container {
+    text-align: center;
+    padding: 40px 5%;
+    background: linear-gradient(to bottom, #FFFFE3, #FFD7EA);
+    border-radius: 10px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.map-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.map-container p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Ajustement du cadre de la carte */
+.map-embed {
+    width: 100%;
+    max-width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .map-embed {
+        height: 300px;
+    }
+
+    .map-container h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .map-embed {
+        height: 250px;
+    }
+
+    .map-container h2 {
+        font-size: 1.6rem;
+    }
+}
+
 
 /* FOOTER */
 footer {
-    background: linear-gradient(to top, #FFD7EA, rgba(255, 255, 255, 0.8));
+    background: linear-gradient(to top, #c68ba7, rgba(255, 215, 234, 0.8));
     padding: 30px 5%;
     text-align: center;
 }

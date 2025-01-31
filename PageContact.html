@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <section>
+            <!--Section Navbar-->
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./assets/logo.avif" alt="Logo">
+                </div>
+                <div class="nav-links">
+                    <li class="nav-link">
+                        <a class="nav-link" target="_blank" aria-current="page" href="./PageApropos.html">A propos</a>
+                    </li>
+                    <!--lien pdf carte du resto-->
+                    <li class="nav-link">
+                        <a class="nav-link" target="_blank"
+                            href="https://www.lessavonsdhelene.fr/_files/ugd/534c3c_0da5f2466e1548f3a31e5fc3ce158362.pdf">Notre
+                            Cartes</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-link" target="_blank" aria-current="page" href="./PageContact.html">Contact</a>
+                    </li>
+                </div>
+            </div>
+    <section class="contact-section">
+        <!-- Overlay pour améliorer la lisibilité -->
+        <div class="overlay"></div>
+
+        <div class="contact-content">
+            <h2>Contactez-nous</h2>
+            <p>Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
+
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label for="name">Nom & Prénom</label>
+                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Votre email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="subject">Objet</label>
+                    <input type="text" id="subject" name="subject" placeholder="Sujet du message">
+                </div>
+
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Envoyer</button>
+            </form>
+
+            <!-- Section Map -->
+            <div class="map-container">
+                <h2>Où nous trouver ?</h2>
+                <p>Retrouvez-nous facilement grâce à la carte interactive ci-dessous.</p>
+
+                <div class="map-embed">
+                    <iframe width="100%" height="400" frameborder="0" style="border:0; border-radius: 10px;"
+                        allowfullscreen referrerpolicy="no-referrer-when-downgrade"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9993093973735!2d7.744083315674807!3d48.57340567925359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796c8572ec9c6d3%3A0x65c85b5e01db5a2e!2s6%20Rue%20Sainte-H%C3%A9l%C3%A8ne%2C%2067000%20Strasbourg%2C%20France!5e0!3m2!1sfr!2sfr!4v1709834893962"
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer>
+        <div class="col-mb-6">
+            <div class="row flex">
+                <p>Horaires d'ouverture<br>
+                    7/7 jours
+                    De 11h30 à 23h00</p>
+                <p>6, Rue sainte Hélène
+                    67000 STRASBOURG<br>
+                    +33 (0)3 67 98 16 98<br>
+                    lessavonsdhelene@gmail.com</p>
+                <p>MENTIONS LÉGALES</p>
+            </div>
+            <!--logo resaux sociaux-->
+            <div class="Footer-logo">
+                <img src="./assets/fb.jpg" alt="Facebook">
+                <img src="./assets/insta.jpg" alt="instagram">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
